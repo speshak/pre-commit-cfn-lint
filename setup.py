@@ -1,8 +1,15 @@
+from setuptools import find_packages
 from setuptools import setup
 
 
 setup(
-    name='pre_commit_dummy_package',
+    name='cfn_lint_pre_commit',
     version='0.0.0',
     install_requires=['cfn-lint'],
+    packages=find_packages(exclude=('tests*', 'testing*')),
+    entry_points={
+        'console_scripts': [
+            'cfn-lint-wrapper = cfn_lint_pre_commit.cfn_lint_wrapper:main'
+        ]
+    },
 )
