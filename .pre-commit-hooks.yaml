@@ -1,5 +1,5 @@
 - id: cfnlint
   name: cfnlint
-  entry: cfn-lint
+  entry: cfn-lint-wrapper
   language: python
   files: \.template$
