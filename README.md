@@ -1,3 +1,7 @@
+# Archived
+
+*The [cfn-lint](https://github.com/awslabs/cfn-python-lint) project has proper pre-commit support.  Use that directly rather than this wrapper.*
+
 cfn-lint
 ========
 
